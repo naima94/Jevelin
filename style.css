@@ -575,6 +575,11 @@ footer{
     .customers {
         padding-top: 20rem;
     }
+
+    .slick-prev::before,
+    .slick-next::before {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -594,11 +599,6 @@ footer{
     .four-columns-grid {
         grid-template-columns: 1fr;
         text-align: center;
-    }
-
-    .slick-prev::before,
-    .slick-next::before {
-        display: none;
     }
 
     .customers {

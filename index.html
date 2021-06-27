@@ -29,7 +29,11 @@
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" 
         />
-       
+
+        <!--Ani,ation on scroll-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+
+       <!--Style CSS-->
         <link rel="stylesheet" href="style.css"/>
        <title>Javelin theme</title>
     </head>
@@ -94,7 +98,11 @@
                     <h2 class="section-title">What we can offer</h2>
                     <h3 class="section-subtitle">From our hearts</h3>
                     <div class="three-columns-grid">
-                        <div class="grid-item">
+                        <div class="grid-item" 
+                            data-aos="fade-right" 
+                            data-oas-offset="400" 
+                            data-oas-duration="1000"
+                            >
                             <img src="img/pic1.png" alt="" width="200">
                             <h3 class="subtitle"><strong>Always</strong> Fresh</h3>
                             <p class="paragraph">
@@ -104,7 +112,11 @@
                             </p>
                         </div>
 
-                        <div class="grid-item">
+                        <div class="grid-item" 
+                            data-aos="fade-up" 
+                            data-oas-offset="400" 
+                            data-oas-duration="1000"
+                            >
                             <img src="img/pic2.png" alt="" width="200">
                             <h3 class="subtitle"><strong>Eco</strong> Products</h3>
                             <p class="paragraph">
@@ -114,7 +126,11 @@
                             </p>
                         </div>
 
-                        <div class="grid-item">
+                        <div class="grid-item" 
+                            data-aos="fade-left" 
+                            data-oas-offset="400" 
+                            data-oas-duration="1000"
+                            >
                             <img src="img/pic3.png" alt="" width="200">
                             <h3 class="subtitle"><strong>Healthy</strong> Deserts</h3>
                             <p class="paragraph">
@@ -131,11 +147,19 @@
             <section class="about" id="about">
                 <div class="container-fluid">
                     <div class="two-columns-grid">
-                        <div class="top-tart">
+                        <div class="top-tart" 
+                            data-aos="fade-right" 
+                            data-oas-offset="400" 
+                            data-oas-duration="1000"
+                            >
                             <img src="img/tart.jpg" alt="Tart" class="tart">
                         </div>
 
-                        <div class="about-us">
+                        <div class="about-us" 
+                            data-aos="fade-left" 
+                            data-oas-offset="400" 
+                            data-oas-duration="1000"
+                            >
                             <h2 class="section-title-welcome">Welcome to Jevelin Restaurant</h2>
                             <p class="about-paragraph">
                                 Visual studio code uncomment multiple lines
@@ -149,7 +173,11 @@
                         </div>
                     </div>
                     <div class="two-columns-grid third-grid">
-                        <div class="read-more">
+                        <div class="read-more" 
+                            data-aos="fade-right" 
+                            data-oas-offset="400" 
+                            data-oas-duration="1000"
+                            >
                             <h2 class="section-title-welcome">
                                 Chef &amp; Owner Kate Fuson and her husband Jack
                             </h2>
@@ -160,7 +188,7 @@
                             </p>
                             <a href="#" class="btn">Reade More</a>
                         </div>
-                        <div class="top-fruits">
+                        <div class="top-fruits" data-aos="fade-left" data-oas-offset="400" data-oas-duration="1000">
                             <img src="img/top-view-of-fruits.jpg" alt="Fruits" class="fruits">
                         </div>
                     </div>
@@ -172,7 +200,7 @@
                     <h2 class="section-title">Our Team</h2>
                     <h3 class="section-subtitle">is the best</h3>
                     <div class="four-columns-grid">
-                        <div class="team-member">
+                        <div class="team-member" data-aos="fade-right" data-oas-offset="400" data-oas-duration="1000">
                             <img src="img/team1.png" alt="Team Member 1">
                             <h2 class="name">Carol Williams</h2>
                             <h3 class="position">Manager</h3>
@@ -184,7 +212,7 @@
                             </p>
                         </div>
 
-                        <div class="team-member">
+                        <div class="team-member" data-aos="fade-up" data-oas-offset="400" data-oas-duration="1000">
                             <img src="img/team2.png" alt="Team Member 2">
                             <h2 class="name">Peter Lawrence</h2>
                             <h3 class="position">Bar Director</h3>
@@ -196,7 +224,7 @@
                             </p>
                         </div>
 
-                        <div class="team-member">
+                        <div class="team-member" data-aos="fade-down" data-oas-offset="400" data-oas-duration="1000">
                             <img src="img/team3.png" alt="Team Member 3">
                             <h2 class="name">Kate Fuson</h2>
                             <h3 class="position">Head Chef</h3>
@@ -208,7 +236,7 @@
                             </p>
                         </div>
 
-                        <div class="team-member">
+                        <div class="team-member" data-aos="fade-left" data-oas-offset="400" data-oas-duration="1000">
                             <img src="img/team4.png" alt="Team Member 4">
                             <h2 class="name">Jack Fuson</h2>
                             <h3 class="position">Wine Director</h3>
@@ -438,7 +466,15 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" 
         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" 
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="app.js">
+        
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+        <script src="app.js"></script>
+
+        <script>
+          AOS.init();
         </script>
+
     </body>
 </html>
